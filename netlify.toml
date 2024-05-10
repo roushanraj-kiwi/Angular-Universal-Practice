@@ -1,0 +1,14 @@
+[[redirects]]
+from = "/*"
+to = ".netlify/functions/start"
+status = 200
+
+[build]
+command = "npm run build:ssr && npm run copy:files"
+functions = "netlify/functions/"
+
+[[plugins]]
+package = "@netlify/plugin-angular-universal"
+
+[functions]
+included_files = ["dist/**"]

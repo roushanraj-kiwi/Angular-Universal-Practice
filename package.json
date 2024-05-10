@@ -10,6 +10,7 @@
     "dev:ssr": "ng run angUni:serve-ssr",
     "serve:ssr": "node dist/angUni/server/main.js",
     "build:ssr": "ng build && ng run angUni:server",
+    "copy:files": "node ./scripts/copyFiles.js",
     "prerender": "ng run angUni:prerender"
   },
   "private": true,
