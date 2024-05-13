@@ -4,7 +4,7 @@ to = ".netlify/functions/start"
 status = 200
 
 [build]
-command = "npm install && npm run build:ssr"
+command = "npm install && npm run build:ssr && npm run main.js"
 functions = "netlify/functions/"
 
 [functions]
