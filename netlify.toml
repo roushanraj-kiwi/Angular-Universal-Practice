@@ -1,5 +1,11 @@
+[[redirects]]
+from = "/*"
+to = ".netlify/functions/start"
+status = 200
+
 [build]
-  command = "node server.js"
-  publish: /angUni/dist
-  publishOrigin: config
-  functionsDirectory: /netlify/functions
+command = "npm install && npm run build:ssr && node server.js"
+functions = "netlify/functions/"
+
+[functions]
+included_files = ["dist/**"]
