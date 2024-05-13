@@ -1,6 +1,5 @@
 [build]
   command = "node server.js"
-  commandOrigin: config
   publish: /angUni/dist
   publishOrigin: config
   functionsDirectory: /netlify/functions
