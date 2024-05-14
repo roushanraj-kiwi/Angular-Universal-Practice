@@ -4,7 +4,7 @@ to = ".netlify/functions/start"
 status = 200
 
 [build]
-command = "npm install && npm run build:ssr && npm run main.js"
+command = "npm install && npm run prerender"
 functions = "netlify/functions/"
 
 [functions]
